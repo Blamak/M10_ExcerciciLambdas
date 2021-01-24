@@ -8,14 +8,14 @@ public class Fase1App {
 
 		/*
 		 * 1: Tenint una llista de cadenes de noms propis, escriu un mètode que retorne
-		 * una llista de totes les cadenes que comencen amb la lletra 'a' (mayuscula) i
+		 * una llista de totes les cadenes que comencen amb la lletra 'a' (majúscula) i
 		 * tenen exactament 3 lletres. Imprimeix el resultat.
 		 * 
 		 */
 		List<String> nomsList = Arrays.asList("Ada", "Deanna", "Geordi", "Beverly", "William", "Adam", "Armen", "Art",
 				"Asa", "Arn");
 
-		System.out.println(cadenesAmbA(nomsList));
+		System.out.println("1: " + cadenesAmbA(nomsList) + "\n");
 		
 
 		/*
@@ -26,28 +26,25 @@ public class Fase1App {
 		 * "o3, e44". Imprimeix el resultat.
 		 * 
 		 */
-		List<Integer> nombres = Arrays.asList(3, 44);
-		System.out.println(parellsSenars(nombres));
+		List<Integer> nombres = Arrays.asList(3, 56, 34, 17, 81, 44);
+		System.out.println("2: " + parellsSenars(nombres) + "\n");
 		
 
 		/*
-		 * 3: Escriu un mètode que retorne una cadena separada per comes basada en una
-		 * llista d’Integers. Cada element hauria d'anar precedit per la lletra "e" si
-		 * el nombre és parell, i precedit de la lletra "o" si el nombre és imparell.
-		 * Per exemple, si la llista d'entrada és (3,44), la sortida hauria de ser
-		 * "o3, e44". Imprimeix el resultat.
+		 * 3: Tenint una llista de Strings, escriu un mètode que retorne una llista de totes
+		 * les cadenes que continguen la lletra 'o' i imprimeix el resultat. 
 		 * 
 		 */
 		List<String> cadenesList = Arrays.asList("Betazed", "OmicronIV", "Nibok", "Zeon", 
 				"TarsusIII", "Ferenginar", "Risa", "ThanatosVII");
-		System.out.println(cadenesAmbO(cadenesList));
+		System.out.println("3: "+ cadenesAmbO(cadenesList) + "\n");
 		
 
 		/*
 		 * 4: Has de fer el mateix que en el punt anterior, però retornant una llista
 		 * que incloga els elements amb més de 5 lletres. Imprimeix el resultat
 		 */
-		System.out.println(mesDeCincLletres(cadenesList));
+		System.out.println("4: " + mesDeCincLletres(cadenesList) + "\n");
 		
 		
 		/*
@@ -56,18 +53,21 @@ public class Fase1App {
 		 */
 		List<String> mesos = Arrays.asList("gener", "febrer", "març", "abril", "maig", "juny",
 				"juliol", "agost", "setembre", "octubre", "novembre", "desembre");
+		
+		System.out.println("5: ");
 		mesos.forEach(mes -> System.out.println(mes));
 		
 		
 		/*
 		 * 6: Has de fer la mateixa impressió del punt anterior però fent-ho mitjançant method reference.
 		 */
+		System.out.println("\n6: ");
 		mesos.forEach(System.out::println);
 
 	}
 	
 	
-	// ****************** MÈTODES ORDENATS *************************** //
+	// ****************** MÈTODES  *************************** //
 
 	// 1:
 	public static List<String> cadenesAmbA(List<String> cadena) {
