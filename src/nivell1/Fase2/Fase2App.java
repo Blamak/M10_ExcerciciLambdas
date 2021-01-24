@@ -1,4 +1,4 @@
-package nivell2;
+package nivell1.Fase2;
 
 public class Fase2App {
 
