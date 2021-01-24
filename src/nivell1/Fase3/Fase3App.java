@@ -1,6 +1,8 @@
+package nivell1.Fase3;
 
 public class Fase3App {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		// Solución canónica
