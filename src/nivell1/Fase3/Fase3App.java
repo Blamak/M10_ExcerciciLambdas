@@ -17,6 +17,7 @@ public class Fase3App {
 
 		// Solució canònica
 		IReverse invertCadena = cadena -> new StringBuilder(cadena).reverse().toString();
+		
 		System.out.println(invertCadena.reverse("Ateo por Arabia iba raro poeta."));
 		System.out.println("");
 
@@ -28,6 +29,7 @@ public class Fase3App {
 			}
 			return result;
 		};
+		
 		System.out.println(invertCadena2.reverse("La ruta nos aportó otro paso natural."));
 		System.out.println("");
 
@@ -35,6 +37,7 @@ public class Fase3App {
 		IReverse invertCadena3 = cadena -> 
 				cadena.chars().mapToObj(c -> (char) c)
 				.reduce("", (s, c) -> c + s, (s1, s2) -> s2 + s1);
+				
 		System.out.println(invertCadena3.reverse("Sarita Sosa es idónea en odiseas o sátiras."));
 	}
 
