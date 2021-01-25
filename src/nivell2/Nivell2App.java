@@ -43,8 +43,7 @@ public class Nivell2App {
 	
 			System.out.println("\ncaracters 'a' -> '4': " + Arrays.toString(matriu));
 	
-			// - Mostra només els elements que siguin 100% numèrics. (tot i que estigui
-			// guardats com strings)
+			// - Mostra només els elements que siguin 100% numèrics. (tot i que estigui guardats com strings)
 			String[] matriuNumbers = Arrays.stream(matriu).filter(string -> string.matches("[0-9]*"))
 					.toArray(String[]::new);
 	
