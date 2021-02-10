@@ -18,8 +18,8 @@ public class Fase3App {
 		// Solució canònica
 		IReverse invertCadena = cadena -> new StringBuilder(cadena).reverse().toString();
 		
-		System.out.println(invertCadena.reverse("Ateo por Arabia iba raro poeta."));
-		System.out.println("");
+		System.out.println(invertCadena.reverse("\nAteo por Arabia iba raro poeta."));
+		
 
 		// Amb un bucle for
 		IReverse invertCadena2 = cadena -> {
@@ -30,9 +30,9 @@ public class Fase3App {
 			return result;
 		};
 		
-		System.out.println(invertCadena2.reverse("La ruta nos aportó otro paso natural."));
-		System.out.println("");
+		System.out.println(invertCadena2.reverse("\nLa ruta nos aportó otro paso natural."));
 
+		
 		// Amb Stream de caràcters
 		IReverse invertCadena3 = cadena -> 
 				cadena.chars().mapToObj(c -> (char) c)
