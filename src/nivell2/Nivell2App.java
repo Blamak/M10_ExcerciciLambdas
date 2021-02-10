@@ -34,7 +34,7 @@ public class Nivell2App {
 					Character.toLowerCase(a.charAt(0)), Character.toLowerCase(b.charAt(0))
 					));
 			
-			System.out.println("\nalfabèticament primer caràcter (error majúscules): " + Arrays.toString(matriu));
+			System.out.println("\nalfabèticament primer caràcter: " + Arrays.toString(matriu));
 				
 	
 			// - les cadenes que contenen 'e' primer, tota la resta en segon lloc
