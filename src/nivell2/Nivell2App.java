@@ -5,7 +5,6 @@ import java.util.Comparator;
 
 public class Nivell2App {
 
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		/*
